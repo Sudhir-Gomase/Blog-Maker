@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Related Database</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<plugins> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-fixed/">
+        <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+    </head>
+    
+    <body class="" style="background-color: bisque">
+        <!--<static navbar>-->
+        <nav class="navbar navbar-expand-md navbar-dark  text-centertext-dark fixed-top bg-info pt-2" >
+            <div class="container-fluid text-center" data-aos="flip-left">
+
+                <center><h2 class=" text-center  fw-bolder gred" style="font-family: 'Quicksand', sans-serif; text-align: end; color: bisque;  " >Blog Maker</h2></center>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse show" id="navbarCollapse" style="">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+
+                    </ul>
+                    <form class="d-flex">
+
+                        <button type="button" class="btn btn-warning text-center  " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Add Blogs
+                        </button>
+                        
+                    </form>
+                    <a href="logout"><button class="m-2 btn btn-warning text-center  "  >LogOut</button> </a>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--            <Gif-Imaage>-->
+        <div class="text-center  pt-5 pb-3 " data-aos="flip-left" style="background-color: bisque" >
+            <img src="blo.gif" class="m-5 text-center h-75" style="width:900px" >
+        </div>
+
+        <hr class="text-success"><hr class="text-primary"><hr class="text-danger">
+
+    <center >
+        <div class="pb-5 ">
+            <div class="shadow-lg  mb-5 bg-body rounded card text-center border border-dark" data-aos="zoom-in" style="max-width: 900px; ">
+                <div class="row g-0 " style="background-color: azure " >
+                    <div class="col-md-4">
+                        <img src="first.jpg" class="img-fluid rounded-start h-100 w-100" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title text-left">Card title</h5><hr class="text-primary ">
+                            <h6 class="text-left" style="text-align: left;">hello</h6>
+                            <p class="card-text" >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p><button>Edit</button>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p><button>Delete</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 300,
+                duration: 1000,
+            });
+        </script>
+    </center>
+    <hr class="text-success"><hr class="text-primary"><hr class="text-danger">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog">
+            <div class="modal-content"  >
+                <div class="modal-header bg-primary text-white ">
+                    <h5 class="modal-title " id="exampleModalLabel">Write Blog</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-light">
+                    <form action="collect" method="post" class="text-center">
+
+                        <label class="fw-bolder"> Write Your  Username</label><br> <input type="text" name="name" class="required fw-bolder w-50 h-50 m-2 text-center"><br>
+                        <label class="fw-bolder">Write Blog  Title</label><br><input type="text" name="title" class=" required fw-bolder w-50 h-50 m-2 text-center" ><br>
+
+                        <label class="fw-bolder" > Write Blog </label><br>
+                        <textarea class="" name="desc" class="required fw-bolder text-center"  style="width: 380px;"></textarea><br>
+                        <br>
+                        <label class="fw-bolder ">  Select Category<br><select id="cars" name="cat" class="fw-bolder w-75  h-75 m-2 required">
+                                <option value="Science">Science</option>
+                                <option value="Technology">Technology</option>
+                                <option value="Cartoon">Cartoon</option>
+                                <option value="cars">cars</option>
+                                <option value="others">others</option>
+                            </select></label><br>
+
+
+                        <div class="modal-footer">
+                            <button type="button"  class="btn btn-secondary"   data-bs-dismiss="modal">Close</button>
+                            <input type="Submit" class="btn btn-outline-success ">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
